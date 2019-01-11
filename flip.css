@@ -1,0 +1,60 @@
+/* entire container, keeps perspective */
+.flip-container {
+	perspective: 1000px;
+}
+/* flip the pane when hovered */
+.flip-container.hover .flipper {
+	transform: rotateY(180deg);
+}
+
+.flip-container, .front, .back {
+	width: 165px;
+	height: 155px;
+	display:inline-block
+}
+
+/* flip speed goes here */
+.flipper {
+	transition: 0.6s;
+	transform-style: preserve-3d;
+
+	position: relative;
+}
+
+/* hide back of pane during swap */
+.front, .back {
+	backface-visibility: hidden;
+
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+/* front pane, placed above back */
+.front {
+	z-index: 2;
+	/* for firefox 31 */
+	transform: rotateY(0deg);
+}
+
+/* back, initially hidden pane */
+.back {
+	transform: rotateY(180deg);
+}
+
+
+
+/*Custom css, no forma parte del efecto flip*/
+#dialog-message{
+	display:none;
+}
+div.ui-widget-header{
+    border: 1px solid #b5e61d;
+    background: #b5e61d url("images/ui-bg_highlight-soft_75_b5e61d_1x100.png") 50% 50% repeat-x;
+}
+div.ui-dialog-buttonset button.ui-state-default, button.ui-widget-content button.ui-state-default{
+	background: #b5e61d url("images/ui-bg_highlight-soft_75_b5e61d_1x100.png") 50% 50% repeat-x;
+}
+img{
+	width : 160px;
+}

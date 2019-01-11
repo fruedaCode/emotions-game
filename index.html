@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html> 
+	<head>
+		<title> Juego de Emociones </title>
+		<link rel="stylesheet" href="./fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+		<link rel="stylesheet" type="text/css" href="./flip.css">
+		<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+	</head>
+	<body>
+	<a href="#contenidoJuego" id="fancyBoxLink">Comenzar juego</a>
+	<div style="display:none">
+		<div id="contenidoJuego">
+			<div class="flip-container">
+				<div class="flipper">
+					<div class="back">
+						<img src="./img/CaraEnfado.png">
+					</div>
+					<div class="front" data-id="1" data-estado="sinPareja">
+						<img src="./img/cruz.png">
+					</div>
+				</div>
+			</div>
+			<div class="flip-container">
+				<div class="flipper">
+					<div class="back">
+						<img src="./img/TextoEnfado.png">
+					</div>
+					<div class="front" data-id="1" data-estado="sinPareja">
+						<img src="./img/cruz.png">
+					</div>
+				</div>
+			</div>
+			<div class="flip-container">
+				<div class="flipper">
+					<div class="back">
+						<img src="./img/CaraAlegria.png" >
+					</div>
+					<div class="front" data-id="2" data-estado="sinPareja">
+						<img src="./img/cruz.png">
+					</div>
+				</div>
+			</div>
+			<div class="flip-container">
+				<div class="flipper">
+					<div class="back">
+						<img src="./img/TextoAlegria.png">
+					</div>
+					<div class="front" data-id="2" data-estado="sinPareja">
+						<img src="./img/cruz.png">
+					</div>
+				</div>
+			</div>
+			<div class="flip-container">
+				<div class="flipper">
+					<div class="back">
+						<img src="./img/TextoMiedo.png">
+					</div>
+					<div class="front" data-id="3" data-estado="sinPareja">
+						<img src="./img/cruz.png">
+					</div>
+				</div>
+			</div>
+			<div class="flip-container">
+				<div class="flipper">
+					<div class="back">
+						<img src="./img/CaraMiedo.png">
+					</div>
+					<div class="front" data-id="3" data-estado="sinPareja">
+						<img src="./img/cruz.png">
+					</div>
+				</div>
+			</div>
+			<div class="flip-container">
+				<div class="flipper">
+					<div class="back">
+						<img src="./img/TextoTristeza.png">
+					</div>
+					<div class="front" data-id="4" data-estado="sinPareja">
+						<img src="./img/cruz.png">
+					</div>
+				</div>
+			</div>
+			<div class="flip-container">
+				<div class="flipper">
+					<div class="back">
+						<img src="./img/CaraTristeza.png">
+					</div>
+					<div class="front" data-id="4" data-estado="sinPareja">
+						<img src="./img/cruz.png">
+					</div>
+				</div>
+			</div>
+			<div class="flip-container">
+				<div class="flipper">
+					<div class="back">
+						<img src="./img/TextoSorpresa.png">
+					</div>
+					<div class="front" data-id="5" data-estado="sinPareja">
+						<img src="./img/cruz.png">
+					</div>
+				</div>
+			</div>
+			<div class="flip-container">
+				<div class="flipper">
+					<div class="back">
+						<img src="./img/CaraSorpresa.png">
+					</div>
+					<div class="front" data-id="5" data-estado="sinPareja">
+						<img src="./img/cruz.png">
+					</div>
+				</div>
+			</div>
+			<div class="flip-container">
+				<div class="flipper">
+					<div class="back">
+						<img src="./img/TextoVerguenza.png">
+					</div>
+					<div class="front" data-id="6" data-estado="sinPareja">
+						<img src="./img/cruz.png">
+					</div>
+				</div>
+			</div>
+			<div class="flip-container">
+				<div class="flipper">
+					<div class="back">
+						<img src="./img/CaraVerguenza.png">
+					</div>
+					<div class="front" data-id="6" data-estado="sinPareja">
+						<img src="./img/cruz.png">
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="dialog-message" title="Fin del juego">
+		    <div style="margin-left: 23px;">
+		        <p>
+		            Enhorabuena has completado el reto!!!
+		        </p>
+		       </div>
+		</div>
+	</div>
+	
+	<script type="text/javascript" src="https://code.jquery.com/jquery-latest.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="./fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+	<script src="./app.js"></script>
+
+	<script src="./shufflePlugin.js"></script>
+	<script src="./juegoMemoria.js"></script>
+	</body>
+</html>
